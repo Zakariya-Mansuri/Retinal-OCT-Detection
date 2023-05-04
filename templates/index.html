@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../static/css/style2.css">
+
+    <style>
+
+        .opimg{
+            position: relative;
+            top: 100px;
+            left: 600px;
+        }
+
+        #opimgid{
+            position: relative;
+            top: 500px;
+            left: 400px;
+            /* left: 2%; */
+        }
+
+        #h2title{
+            display: block;
+            position: relative;
+            left: 300px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <img src="../static/medical-logo-png-882.png" id="logo" alt="">  
+
+        <nav class="navbar">
+            <a href="#">home</a>
+            <a href="https://bmcophthalmol.biomedcentral.com/articles/10.1186/s12886-020-01382-4">about</a>
+            <a href="#">service</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menubar" class="fas fa-bars"></div>
+            <a href="#">contact</a>
+        </div>
+    </header>
+
+    <div class="background-image">
+        <div class="background-content">
+            <h1>What Is Optical Coherence <br> Tomography? </h1>
+            <p>Optical Coherence Tomography (OCT) is a non-invasive diagnostic <br> technique  that renders an in vivo cross sectional view of the retina.<br> OCT utilizes a concept known as inferometry to create a <br>cross-sectional map of the retina that is accurate <br>  to within at least 10-15 microns.</p>
+            <a href="https://eyewiki.aao.org/Optical_Coherence_Tomography">Read more</a>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="main-about">
+            <div class="inner-about">
+                <div class="about-content">
+                    <h1>Predict disease  using DL model</h1>
+                <p>Retinal optical coherence tomography (OCT) is an imaging technique used to capture high-resolution cross sections of the retinas of living patients. Approximately 3 Crore OCT scans are performed each year, and the analysis and interpretation of these images takes up a significant amount of time.
+                    <br> This project is concentrated towards classifying the OCT images into 4 types<br>  
+1)Normal <br>
+2)Choroidal neovascularization (CNV)<br>
+3)Diabetic macular edema(DME)<br>
+4)Drusen 
+
+                </p>
+                </div>
+                
+            </div>
+            <div class="inner-about">
+                <div class="inner-about-image">
+                    <img src="../static/Artificial-Intelligence-in-Eye-Care.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+    
+
+
+
+<div class="container1">
+
+    <h1 id="c1Heading">Enter Retinal OCT Image</h1>
+    
+    <form class="form-horizontal" action="/submit" method="post" enctype="multipart/form-data">
+
+    <label for="img1" id="labImg">Upload OCT Image</label>
+    <input type="file" class="form-control" placeholder="Hours Studied"  name="my_image" id="pwd">
+
+    <button type="submit" formaction="/submit" id="submit" > Submit </button>
+
+    <button type="button"  id="reset"> Reset Session </button>
+    </form>
+
+
+        
+
+</div>
+
+
+
+    <img src="{{img_path}}" height="200px" width="200px" id = "opimgid">
+
+
+<div id="h2title">
+
+    <h2 > Prediction   : <b> {{prediction}} </b></h2>
+</div>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- provide an exceptional patient experience
+<i class="fas fa-notes-medical"></i>
+<i class="fas fa-hospital-user"></i>
+<i class="fas fa-user-md"></i>
+-->
