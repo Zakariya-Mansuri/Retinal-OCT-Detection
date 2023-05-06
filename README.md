@@ -1,40 +1,7 @@
-# Image-Classification-on-Flask
+This end to end project showcases the potential of using pre-trained models such as ResNet50 for image classification tasks, especially in the medical field, where the correct diagnosis can make a significant impact on patient outcomes. The dataset used in this project is sourced from Kaggle, which consists of retinal OCT images categorized into four classes: Normal, CNV, DME, and DRUSEN. 
 
-Web Deployment project of Image classification using on model using flask 
+The project's main goal was to classify the images into their respective categories using the pre-trained ResNet50 model. The final model achieved an accuracy of 97% and an F1 score of 25%. The model's architecture consists of a ResNet50 base model with pre-trained weights and four dense layers with varying numbers of neurons and activation functions, ending with a softmax activation function. The model was trained using the stochastic gradient descent optimizer with a learning rate of 0.001 and momentum of 0.9.
 
-We can implement this on netlify.com to view and use the functions either we can use cloud services. 
+In addition to using the ResNet50 model for image classification, this project also includes a web page with the integration of Flask, a lightweight Python web framework that enables the creation of web applications with minimal coding. The web page allows users to upload an image and receive a prediction of the image's category from the trained model. The image is first preprocessed to fit the input shape of the ResNet50 model before being passed through the model for prediction. The predicted category is then displayed to the user on the web page.
 
-# About this 
-
-So this is Basically a Classifier which predicts the image is Cat, Dog, Horse or Human. 
-
-In this we have first implemented and save a model.h5
-And we have used it with flask for deployment on Web through the Web User Interface and
-Easier way to classification. 
-
-We take the image from user and classifies it based on our model which is already created and saved. 
-
-# Requirements 
-
-- `Tensorflow`
--   `Keras`
--   `Flask`
--   `Python`
-
-# How to run this Locally on Pc/Laptop?
-
-1) For this you need to install Python & flask first
-    '`PIP INSTALL FLASK`' 
-
-2) Go to the folder where these all files are and then run cmd/terminal/git bash
-
-3) Type Python app.py
-
-5) It will start the server and will show the URL
-
-6) Copy and paste in browser and hit Enter
-
-7) Try all the Functions and Enjoy !!
-
-
-~ Bhargav Joshi
+The integration of Flask in this project demonstrates the potential of deploying machine learning models in web applications for practical use. It provides a user-friendly interface that can be easily accessed by medical professionals or patients who require quick and accurate diagnoses. Overall, this project highlights the versatility and effectiveness of pre-trained models and their integration into web applications for real-world use.
